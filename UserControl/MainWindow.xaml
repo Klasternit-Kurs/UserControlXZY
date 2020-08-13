@@ -1,0 +1,32 @@
+﻿<Window x:Class="UserControla.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserControla"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<TabControl>
+		<TabItem Header="Prvi" FontSize="24">
+			<StackPanel>
+				<local:OsobaUC Bla="Nesto" x:Name="uc"/>
+			</StackPanel>
+		</TabItem>
+		<TabItem Header="Drugi" FontSize="24">
+			<ListView Name="ls" FontSize="24"/>
+		</TabItem>
+		<TabItem Header="Treci" FontSize="24">
+			<DataGrid FontSize="24" Name="dg">
+				<DataGrid.Columns>
+					<DataGridTemplateColumn>
+						<DataGridTemplateColumn.CellTemplate>
+							<DataTemplate>
+								<ListView ItemsSource="{Binding Nesto}"/>
+							</DataTemplate>
+						</DataGridTemplateColumn.CellTemplate>
+					</DataGridTemplateColumn>
+				</DataGrid.Columns>
+			</DataGrid>
+		</TabItem>
+	</TabControl>
+</Window>

@@ -1,0 +1,12 @@
+﻿<Application x:Class="UserControla.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UserControla"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+		<Style x:Key="NekiStil" TargetType="Button">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Background" Value="Red"/>
+		</Style>
+    </Application.Resources>
+</Application>
